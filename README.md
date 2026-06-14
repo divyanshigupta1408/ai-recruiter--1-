@@ -35,7 +35,7 @@ Most ATS systems **filter** candidates by keyword matching. AI Recruiter **ranks
 ## ✨ Key Capabilities
 
 **🔍 Deep Job Understanding**
-Claude reads your job description and extracts structured intent — role level, core mission, must-haves vs nice-to-haves, domain context — not just keywords.
+Reads your job description and extracts structured intent — role level, core mission, must-haves vs nice-to-haves, domain context — not just keywords.
 
 **🎯 Semantic Fit Scoring**
 Goes beyond exact keyword overlap. Understands that "built distributed systems at scale" implies Go/gRPC/Kafka expertise even if not explicitly listed.
@@ -47,7 +47,7 @@ Scores candidates on GitHub activity, open-source contributions, publications, c
 Every candidate gets a composite score across three weighted dimensions, plus a 2–3 sentence AI recruiter narrative explaining exactly why they ranked where they did.
 
 **⚡ Lightning Fast**
-Evaluates your entire candidate pool in a single Claude API call. No sequential processing.
+Evaluates your entire candidate pool in a single API call. No sequential processing.
 
 ---
 
@@ -63,13 +63,13 @@ Evaluates your entire candidate pool in a single Claude API call. No sequential 
 │                 FastAPI Backend                       │
 │                                                       │
 │  Stage 1 — parse_job_description()                   │
-│            Claude: free-text JD → structured intent  │
+│            free-text JD → structured intent  │
 │                                                       │
 │  Stage 2 — compute_activity_score()                  │
 │            GitHub stars · contributions · tenure     │
 │                                                       │
 │  Stage 3 — rank_candidates_with_ai()                 │
-│            Claude: JD + all profiles → scored JSON   │
+│            JD + all profiles → scored JSON   │
 │                                                       │
 │  Stage 4 — compute_overall_score()                   │
 │            Weighted composite: 45 / 30 / 25          │
@@ -80,7 +80,7 @@ Evaluates your entire candidate pool in a single Claude API call. No sequential 
 
 ### Scoring Formula
 
-| Dimension | Weight | What Claude Evaluates |
+| Dimension | Weight | What is Evaluated |
 |---|:---:|---|
 | **Semantic Fit** | 45% | Does their actual experience match the JD's core mission? |
 | **Experience Depth** | 30% | Seniority, domain relevance, measurable impact |
@@ -329,7 +329,7 @@ MIT © 2024 — See [LICENSE](LICENSE) for details.
 ---
 
 <div align="center">
-
-Built with ❤️ using [Claude](https://anthropic.com) · [FastAPI](https://fastapi.tiangolo.com) · [React](https://react.dev)
+Built with ❤️ using  [FastAPI](https://fastapi.tiangolo.com) · [React](https://react.dev)
 
 </div>
+
