@@ -2,7 +2,7 @@
 
 # ✦ AI Recruiter
 
-### Intelligent Candidate Ranking Engine — Powered by Claude
+### Intelligent Candidate Ranking Engine
 
 *Paste a job description. Get a semantically ranked shortlist in seconds.*
 
